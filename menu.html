@@ -76,7 +76,11 @@ const recordLink = document.getElementById("recordLink");
 
 sharkLink.addEventListener("click", function() {  
 　const rect = sharkLink.getBoundingClientRect();  
+  
+  cursor.style.position = "absolute";
+  cursor.style.left = rect.left + "px";
   });
+  
 </script>
   
 </body>
