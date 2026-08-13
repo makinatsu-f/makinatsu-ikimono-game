@@ -48,17 +48,17 @@
   
   <div class="game-screen">
    　　　　　　　 
- <img src="assets/yajirusi_green.png">
+<img id="cursor" src="assets/yajirusi_green.png">
     
-  <h1>MENU</h1>
+<h1>MENU</h1>
     
-<a href="shark.html">このサメだ〜れだ？</a>
+<a id="sharkLink" href="shark.html">このサメだ〜れだ？</a>
 
-<a href="saba.html">サバタップゲーム</a>
+<a id="sabaLink" href="saba.html">サバタップゲーム</a>
 
-<p>生き物ミニ図鑑（ 🚧 工事中！）</p>
+<p id="zukan">生き物ミニ図鑑（🚧 工事中！）</p>
 
-<a href="record.html">★RECORD</a>
+<a id="recordLink" href="record.html">★RECORD</a>
     
 <a href="index.html" class="exit-link">
   ← いきものゲーム室へ
@@ -67,7 +67,15 @@
 </div>  
 
 <script>
-  alert("こんにちは！");
+  
+const cursor = document.getElementById("cursor"); 
+const sharkLink = document.getElementById("sharkLink");
+const sabalink = document.getElementById("sabaLink");  
+const zukan = document.getElementById("zukan");
+const recordLink = document.getElementById("recordLink");
+
+sharkLink.addEventListener("click", function() {  
+  
 </script>
   
 </body>
